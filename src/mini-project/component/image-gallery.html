@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="max-w-md m-auto img-gallery md:max-w-screen-2xl md:mb-12" >
+        <section class="flex justify-center my-10 text-center nav-bar md:justify-end md:pr-4 ">
+          <nav class="navbar">
+            <ul class="flex flex-col gap-4 list-none nav-menu md:flex-row">
+              <li><a class="px-3 py-2 " href="">Vectors</a></li>
+              <li><a class="px-3 py-2" href="">Illustration</a></li>
+              <li><a class="px-3 py-2" href="">Images</a></li>
+              <li><a class="px-3 py-2" href="">Icons</a></li>
+            </ul>
+          </nav>
+        </section>
+        <section class="mb-5 upload-and-search">
+          <div
+            class="flex flex-col items-center justify-center px-6 md:flex-row md:justify-between">
+            <div class="relative flex items-center h-12 mb-4 overflow-hidden bg-white rounded-lg focus-within:shadow-lg">
+              <input
+                class="pr-2 text-sm text-gray-700 outline-none peer"
+                type="text"
+                id="search"
+                placeholder="Search something.."
+              />
+              <div class="grid w-12 text-gray-300 place-items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-6 h-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div>
+              <a class=" text-white btn-primary px-36 bg-black p-7 duration-150  md:px-10 md:py-6 md:mr-0 md:w-[87%] hover:bg-white hover:text-black hover:border hover:border-gray-900 hover:duration-150">
+                Upload</a>
+            </div>
+          </div>
+        </section>
+        <section class="grid gap-5 px-6 m-auto image-gallery max-w-screen-2xl" id="gallery-section">
+        </section>
+      </div>
+      <script src="/src/mini-project/component-detail/imageDetails.js"></script>
+</body>
+</html>
